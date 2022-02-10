@@ -475,7 +475,7 @@
 -a always,exit -F arch=b32 -S all -k 32bit_api -k audit-wazuh-c
 
 # Exclude google osconfig agent executions
--a never,exclude -F exe=/usr/bin/google_osconfig_agent
+# -a never,exclude -F exe=/usr/bin/google_osconfig_agent
 
 -w /etc -p wa -k wazuh_fim
 
